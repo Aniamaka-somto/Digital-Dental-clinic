@@ -1,4 +1,5 @@
 // import React from "react";
+// import clinicImage from "../assets/clinic.jpg";
 
 export const Hero = () => {
   return (
@@ -15,7 +16,12 @@ export const Hero = () => {
           </p>
         </div>
         <div className="hidden md:visible">
-          <img src=".\src\assets\react.svg" alt="" />
+          <img
+            src="/src/assets/clinic.jpg"
+            alt="clinic"
+            width={800}
+            height={800}
+          />
         </div>
       </div>
     </div>
