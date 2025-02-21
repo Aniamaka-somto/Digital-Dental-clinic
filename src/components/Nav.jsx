@@ -33,7 +33,7 @@ const Nav = () => {
         <button className="bg-emerald-600 rounded-3xl px-3 lg:px-7 py-2.5 text-white font-semibold cursor-pointer hover:bg-emerald-500 hidden md:block text-xs lg:text-sm">
           Book Appointment
         </button>
-        <button className="md:hidden">
+        <button className="md:hidden cursor-pointer">
           <CiMenuFries />
         </button>
       </div>

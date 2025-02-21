@@ -18,7 +18,7 @@ const Services = () => {
     },
     {
       title: "Restorative Dentistry",
-      desc1: "Braces (metal, ceramic, or clear aligners like invisalign)",
+      desc1: "Braces (metal, ceramic, or clear aligners)",
       desc2: "Retainer",
     },
   ];
