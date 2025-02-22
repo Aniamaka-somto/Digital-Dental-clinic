@@ -1,5 +1,5 @@
 // import React from "react";
-// import clinicImage from "../assets/clinic.jpg";
+import clinicImage from "../assets/clinic.jpg";
 
 export const Hero = () => {
   return (
@@ -15,13 +15,8 @@ export const Hero = () => {
             gentle touch
           </p>
         </div>
-        <div className="hidden md:visible">
-          <img
-            src="/src/assets/clinic.jpg"
-            alt="clinic"
-            width={800}
-            height={800}
-          />
+        <div className="hidden md:flex justify-center items-center">
+          <img src={clinicImage} alt="clinic" className="rounded-xl" />
         </div>
       </div>
     </div>
