@@ -33,13 +33,15 @@ const Appointmen = () => {
   };
 
   return (
-    <div className="h-[100vh] px-10 flex flex-col items-center bg-emerald-300 justify-center">
-      <div className="rounded-md w-2/3 md:h-2/3 h-fit min-w-2xs bg-white shadow-2xl flex flex-col items-center justify-center py-5 px-5">
-        <h1 className="text-2xl font-bold pb-5 md:pb-10">Book Appointment</h1>
+    <div className="h-[100vh] px-10 flex flex-col items-center bg-emerald-100 justify-center">
+      <div className="rounded-md w-full md:w-2/3 md:h-2/3 h-fit min-w-2xs bg-white shadow-2xl flex flex-col items-center justify-center py-5 px-5">
+        <h1 className="text-sm md:text-xl lg:text-2xl font-bold pb-5 md:pb-10">
+          Book Appointment
+        </h1>
 
-        <form onSubmit={handleSubmit} className="space-y-0.5">
-          <div className="flex flex-col md:flex-row md:gap-x-2.5">
-            <div>
+        <form onSubmit={handleSubmit} className="space-y-0.5 w-full">
+          <div className="flex flex-col md:flex-row md:gap-x-2.5 w-full">
+            <div className="w-full md:w-1/2">
               <label
                 htmlFor="fullName"
                 className="block text-sm font-medium text-gray-700 mb-1"
@@ -58,7 +60,7 @@ const Appointmen = () => {
               />
             </div>
 
-            <div>
+            <div className="w-full md:w-1/2">
               <label
                 htmlFor="email"
                 className="block text-sm font-medium text-gray-700 mb-1"
@@ -77,45 +79,46 @@ const Appointmen = () => {
               />
             </div>
           </div>
+          <div className="flex flex-col md:flex-row md:gap-x-2.5 w-full">
+            <div className="w-full md:w-1/2">
+              <label
+                htmlFor="phone"
+                className="block text-sm font-medium text-gray-700 mb-1"
+              >
+                Phone Number
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                value={formData.phone}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+                placeholder="(123) 456-7890"
+              />
+            </div>
 
-          <div>
-            <label
-              htmlFor="phone"
-              className="block text-sm font-medium text-gray-700 mb-1"
-            >
-              Phone Number
-            </label>
-            <input
-              type="tel"
-              id="phone"
-              name="phone"
-              value={formData.phone}
-              onChange={handleChange}
-              required
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
-              placeholder="(123) 456-7890"
-            />
+            <div className="w-full md:w-1/2">
+              <label
+                htmlFor="date"
+                className="block text-sm font-medium text-gray-700 mb-1"
+              >
+                Preferred Date
+              </label>
+              <input
+                type="date"
+                id="date"
+                name="date"
+                value={formData.date}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+              />
+            </div>
           </div>
 
-          <div>
-            <label
-              htmlFor="date"
-              className="block text-sm font-medium text-gray-700 mb-1"
-            >
-              Preferred Date
-            </label>
-            <input
-              type="date"
-              id="date"
-              name="date"
-              value={formData.date}
-              onChange={handleChange}
-              required
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
-            />
-          </div>
-
-          <div className="pb-2.5">
+          <div className="pb-2.5 w-full">
             <label
               htmlFor="serviceType"
               className="block text-sm font-medium text-gray-700 mb-1 "
@@ -140,10 +143,29 @@ const Appointmen = () => {
               <option value="other">Other</option>
             </select>
           </div>
+          <div className="w-full">
+            <label
+              htmlFor="additionalComment"
+              className="block text-sm font-medium text-gray-700 mb-1 "
+            >
+              Additional Comments
+            </label>
+            <textarea
+              id="additionalComment"
+              name="additionalComment"
+              value={formData.additionalComment}
+              onChange={handleChange}
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+              placeholder="Enter any additional comments here..."
+            />
+          </div>
 
           <button
             type="submit"
-            className="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-2 px-4 rounded-md transition duration-300 ease-in-out transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+            className="bg-emerald-600 rounded-md px-7 py-2.5 text-white 
+            font-semibold cursor-pointer hover:bg-emerald-500 hover:scale-95
+            transition-all duration-200 hidden md:block text-xs lg:text-sm 
+            shadow-sm hover:shadow-md w-full"
           >
             Submit Request
           </button>
