@@ -6,10 +6,10 @@ const Nav = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
-    { title: "Home", href: "" },
-    { title: "Services", href: "" },
-    { title: "About", href: "" },
-    { title: "Contact", href: "" },
+    { title: "Home", href: "#" },
+    { title: "Services", href: "#" },
+    { title: "About", href: "#" },
+    { title: "Contact", href: "#" },
   ];
 
   return (
@@ -23,13 +23,13 @@ const Nav = () => {
 
           {/* Desktop Navigation */}
           <ul className="md:gap-10 gap-5 hidden md:flex">
-            {navLinks.map((link, index) => (
+            {navLinks.map(({ title, href }, index) => (
               <li key={index}>
                 <a
-                  href={link.href}
+                  href={href}
                   className="text-zinc-700 hover:text-emerald-600 transition-colors duration-200"
                 >
-                  {link.title}
+                  {title}
                 </a>
               </li>
             ))}
