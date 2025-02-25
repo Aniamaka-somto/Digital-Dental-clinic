@@ -164,7 +164,7 @@ const Appointmen = () => {
             type="submit"
             className="bg-emerald-600 rounded-md px-7 py-2.5 text-white 
             font-semibold cursor-pointer hover:bg-emerald-500 hover:scale-95
-            transition-all duration-200 hidden md:block text-xs lg:text-sm 
+            transition-all duration-200 text-xs lg:text-sm 
             shadow-sm hover:shadow-md w-full"
           >
             Submit Request
