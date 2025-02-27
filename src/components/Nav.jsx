@@ -13,7 +13,7 @@ const Nav = () => {
   ];
 
   return (
-    <nav className="relative">
+    <nav className="sticky ">
       <div className="px-5 shadow-sm py-4">
         <div className="flex md:justify-evenly items-center justify-between">
           {/* Logo */}
@@ -23,8 +23,8 @@ const Nav = () => {
 
           {/* Desktop Navigation */}
           <ul className="md:gap-10 gap-5 hidden md:flex">
-            {navLinks.map(({ title, href }, index) => (
-              <li key={index}>
+            {navLinks.map(({ title, href }, key) => (
+              <li key={key}>
                 <a
                   href={href}
                   className="text-zinc-700 hover:text-emerald-600 transition-colors duration-200"
@@ -70,7 +70,7 @@ const Nav = () => {
               <a
                 href={link.href}
                 className="block px-5 py-2 text-zinc-700 hover:bg-emerald-50 
-                hover:text-emerald-600 transition-colors duration-200"
+                hover:text-emerald-600 transition-colors duration-200 active:bg-amber-50 active:text-emerald-600"
               >
                 {link.title}
               </a>

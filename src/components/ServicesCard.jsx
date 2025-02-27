@@ -2,7 +2,7 @@
 
 const ServicesCard = ({ title, desc1, desc2, desc3, icons }) => {
   return (
-    <div className="h-40 max-w-full shadow-lg p-4 rounded-lg flex flex-col justify-start bg-emerald-50">
+    <div className="h-44 max-w-full shadow-lg p-4 rounded-lg flex flex-col justify-start bg-emerald-50 ">
       <div className="text-2xl  text-emerald-600 lg:pb-2.5 pb-1.5 ">
         {icons}
       </div>

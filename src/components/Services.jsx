@@ -32,7 +32,7 @@ const Services = () => {
     <div className="flex flex-col w-full pb-20">
       <div className="py-3 text-2xl font-bold text-center">Our Services</div>
       <div className="flex justify-between">
-        <div className="grid gap-x-5 gap-y-2.5 grid-cols-1 md:grid-cols-3 lg:grid-cols-3 px-10 justify-center items-center w-full ">
+        <div className="grid gap-x-5 md:gap-y-2.5 gap-y-7 grid-cols-1 md:grid-cols-3 lg:grid-cols-3 px-10 justify-center items-center w-full ">
           {services.map(({ title, desc1, desc2, desc3, icons }, key) => {
             return (
               <ServicesCard

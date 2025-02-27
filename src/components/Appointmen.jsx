@@ -33,7 +33,7 @@ const Appointmen = () => {
   };
 
   return (
-    <div className="h-[100vh] px-10 flex flex-col items-center bg-emerald-100 justify-center">
+    <div className="min-h-fit py-20 px-10 flex flex-col items-center bg-emerald-100 justify-center">
       <div className="rounded-md w-full md:w-2/3 md:h-2/3 h-fit min-w-2xs bg-white shadow-2xl flex flex-col items-center justify-center py-5 px-5">
         <h1 className="text-sm md:text-xl lg:text-2xl font-bold pb-5 md:pb-10">
           Book Appointment
@@ -155,7 +155,7 @@ const Appointmen = () => {
               name="additionalComment"
               value={formData.additionalComment}
               onChange={handleChange}
-              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
+              className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition max-h-40 min-h-32"
               placeholder="Enter any additional comments here..."
             />
           </div>

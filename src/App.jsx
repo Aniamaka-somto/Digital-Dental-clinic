@@ -3,7 +3,8 @@ import Nav from "./components/Nav";
 import { Hero } from "./components/Hero";
 import Appointmen from "./components/Appointmen";
 import Services from "./components/Services";
-import ServicesCard from "./components/ServicesCard";
+import ChooseUS from "./components/ChooseUS";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -12,7 +13,9 @@ const App = () => {
       <Hero />
       <Services />
       <Appointmen />
-      <ServicesCard />
+      <ChooseUS />
+      <Footer />
+      <div className="rounded-full h-10 w-10 fixed bottom-5 right-3 bg-emerald-600 animate-bounce"></div>
     </>
   );
 };
