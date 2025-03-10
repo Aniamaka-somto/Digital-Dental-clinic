@@ -5,23 +5,23 @@ const ChooseUS = () => {
   const whyChooseUs = [
     {
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sit in optio recusandae architecto sapiente, distinctio aspernatur modi, similique at cumque, quam quas quae dolorem. Iure, vel voluptatum. Vel, suscipit?",
-      img: "",
+        "Expert Care - Our experienced dentists use the latest techniques for comfortable, effective treatment.",
+      img: "src/assets/img1.jpg",
     },
     {
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sit in optio recusandae architecto sapiente, distinctio aspernatur modi, similique at cumque, quam quas quae dolorem. Iure, vel voluptatum. Vel, suscipit?",
-      img: "",
+        "State-of-the-Art Technology - We invest in modern equipment for precise diagnostics and efficient treatments.",
+      img: "src/assets/img2.jpg",
     },
     {
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sit in optio recusandae architecto sapiente, distinctio aspernatur modi, similique at cumque, quam quas quae dolorem. Iure, vel voluptatum. Vel, suscipit?",
-      img: "",
+        "Convenient Scheduling - We offer flexible appointment times including evenings and weekends to accommodate your busy lifestyle.",
+      img: "src/assets/img3.jpg",
     },
     {
       content:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem sit in optio recusandae architecto sapiente, distinctio aspernatur modi, similique at cumque, quam quas quae dolorem. Iure, vel voluptatum. Vel, suscipit?",
-      img: "",
+        "Personalized Treatment - We create customized care plans to address your unique dental needs.",
+      img: "src/assets/img4.jpg",
     },
   ];
   return (

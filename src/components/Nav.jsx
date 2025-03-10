@@ -13,7 +13,7 @@ const Nav = () => {
   ];
 
   return (
-    <nav className="sticky ">
+    <nav className="fixed top-0 w-full bg-white z-50 ">
       <div className="px-5 shadow-sm py-4">
         <div className="flex md:justify-evenly items-center justify-between">
           {/* Logo */}
